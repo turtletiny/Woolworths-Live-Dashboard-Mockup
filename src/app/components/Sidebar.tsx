@@ -1,28 +1,31 @@
 import {
   LayoutDashboard,
   Package,
-  Users,
   BarChart3,
-  Settings,
-  Bell
+  Settings
 } from 'lucide-react';
+
+type Page = 'dashboard' | 'orders' | 'analytics' | 'settings';
 
 interface NavItem {
   icon: React.ElementType;
   label: string;
-  active?: boolean;
+  page: Page;
 }
 
 const navItems: NavItem[] = [
-  { icon: LayoutDashboard, label: 'Dashboard', active: true },
-  { icon: Package, label: 'Orders' },
-  { icon: Users, label: 'Staff' },
-  { icon: BarChart3, label: 'Analytics' },
-  { icon: Bell, label: 'Alerts' },
-  { icon: Settings, label: 'Settings' }
+  { icon: LayoutDashboard, label: 'Dashboard', page: 'dashboard' },
+  { icon: Package, label: 'Orders', page: 'orders' },
+  { icon: BarChart3, label: 'Analytics', page: 'analytics' },
+  { icon: Settings, label: 'Settings', page: 'settings' }
 ];
 
-export function Sidebar() {
+interface SidebarProps {
+  currentPage: Page;
+  onNavigate: (page: Page) => void;
+}
+
+export function Sidebar({ currentPage, onNavigate }: SidebarProps) {
   return (
     <div className="w-64 bg-[var(--woolworths-green)] text-white flex flex-col h-full">
       <div className="p-6 border-b border-[var(--woolworths-light-green)]">
@@ -41,19 +44,20 @@ export function Sidebar() {
         <ul className="space-y-2">
           {navItems.map((item) => {
             const Icon = item.icon;
+            const isActive = currentPage === item.page;
             return (
               <li key={item.label}>
-                <a
-                  href="#"
-                  className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${
-                    item.active
+                <button
+                  onClick={() => onNavigate(item.page)}
+                  className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${
+                    isActive
                       ? 'bg-white text-[var(--woolworths-green)] font-medium'
                       : 'text-green-50 hover:bg-[var(--woolworths-light-green)] hover:text-white'
                   }`}
                 >
                   <Icon className="w-5 h-5" />
                   <span>{item.label}</span>
-                </a>
+                </button>
               </li>
             );
           })}
