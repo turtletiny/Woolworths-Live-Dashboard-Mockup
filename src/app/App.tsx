@@ -7,6 +7,7 @@ import { PriorityPickingQueue } from './components/PriorityPickingQueue';
 import { LiveStaffActivity } from './components/LiveStaffActivity';
 import { UpcomingSchedule } from './components/UpcomingSchedule';
 import { OrdersPage } from './components/OrdersPage';
+import { AIPredictionPage } from './components/AIPredictionPage';
 
 type Page = 'dashboard' | 'orders' | 'ai-prediction';
 
@@ -61,6 +62,8 @@ export default function App() {
           )}
 
           {currentPage === 'orders' && <OrdersPage />}
+
+          {currentPage === 'ai-prediction' && <AIPredictionPage />}
         </main>
       </div>
     </div>
