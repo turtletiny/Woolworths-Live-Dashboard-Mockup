@@ -111,6 +111,12 @@ function getOrderGroceries(orderId: string): GroceryItem[] {
       { name: 'White Bread', stockCount: 'Stock: 8', aisle: 'Aisle 1', picked: true },
       { name: 'Milk', stockCount: 'Stock: 24', aisle: 'Aisle 5', picked: false },
       { name: 'Dishwashing Liquid', stockCount: 'Stock: 11', aisle: 'Aisle 9', picked: false },
+      { name: 'Orange Juice', stockCount: 'Stock: 12', aisle: 'Aisle 5', picked: false },
+      { name: 'Eggs', stockCount: 'Stock: 20', aisle: 'Aisle 6', picked: false },
+      { name: 'Cheddar Cheese', stockCount: 'Stock: 9', aisle: 'Aisle 6', picked: false },
+      { name: 'Ground Beef', stockCount: 'Stock: 14', aisle: 'Aisle 6', picked: false },
+      { name: 'Pasta', stockCount: 'Stock: 22', aisle: 'Aisle 8', picked: false },
+      { name: 'Olive Oil', stockCount: 'Stock: 7', aisle: 'Aisle 8', picked: false },
     ],
     'WW-20260508-1847': [
       { name: 'Apples', stockCount: 'Stock: 28', aisle: 'Aisle 3', picked: true },
