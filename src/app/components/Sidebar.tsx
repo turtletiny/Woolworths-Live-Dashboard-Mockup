@@ -1,11 +1,10 @@
 import {
   LayoutDashboard,
   Package,
-  BarChart3,
-  Settings
+  Sparkles
 } from 'lucide-react';
 
-type Page = 'dashboard' | 'orders' | 'analytics' | 'settings';
+type Page = 'dashboard' | 'orders' | 'ai-prediction';
 
 interface NavItem {
   icon: React.ElementType;
@@ -16,8 +15,7 @@ interface NavItem {
 const navItems: NavItem[] = [
   { icon: LayoutDashboard, label: 'Dashboard', page: 'dashboard' },
   { icon: Package, label: 'Orders', page: 'orders' },
-  { icon: BarChart3, label: 'Analytics', page: 'analytics' },
-  { icon: Settings, label: 'Settings', page: 'settings' }
+  { icon: Sparkles, label: 'AI Prediction', page: 'ai-prediction' }
 ];
 
 interface SidebarProps {

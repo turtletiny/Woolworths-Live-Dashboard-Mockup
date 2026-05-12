@@ -8,7 +8,7 @@ import { LiveStaffActivity } from './components/LiveStaffActivity';
 import { UpcomingSchedule } from './components/UpcomingSchedule';
 import { OrdersPage } from './components/OrdersPage';
 
-type Page = 'dashboard' | 'orders' | 'analytics' | 'settings';
+type Page = 'dashboard' | 'orders' | 'ai-prediction';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<Page>('dashboard');
