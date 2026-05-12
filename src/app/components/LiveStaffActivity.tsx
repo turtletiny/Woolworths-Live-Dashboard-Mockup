@@ -26,13 +26,13 @@ const mockStaffData: StaffMember[] = [
   {
     id: '3',
     name: 'Emma Thompson',
-    currentTask: 'picking James Jones',
+    currentTask: 'picking (order removed)',
     status: 'active'
   },
   {
     id: '4',
     name: 'Michael Roberts',
-    currentTask: 'dispatching Michael Patel',
+    currentTask: 'dispatching (order removed)',
     status: 'active'
   },
   {
@@ -57,7 +57,7 @@ const mockStaffData: StaffMember[] = [
   {
     id: '8',
     name: 'Tom Wilson',
-    currentTask: 'picking Ben Lowry',
+    currentTask: 'picking (order removed)',
     status: 'active'
   }
 ];

@@ -26,24 +26,6 @@ const ordersData: Order[] = [
     dueTime: '11:30'
   },
   {
-    id: 'WW-20260508-1851',
-    customerName: 'James Jones',
-    orderTime: '09:32',
-    items: 18,
-    total: '$87.20',
-    status: 'picking',
-    dueTime: '11:30'
-  },
-  {
-    id: 'WW-20260508-1862',
-    customerName: 'Michael Patel',
-    orderTime: '09:45',
-    items: 15,
-    total: '$256.80',
-    status: 'dispatched',
-    dueTime: '12:00'
-  },
-  {
     id: 'WW-20260508-1868',
     customerName: 'Lisa Brown',
     orderTime: '10:00',
@@ -60,24 +42,6 @@ const ordersData: Order[] = [
     total: '$198.75',
     status: 'picking',
     dueTime: '12:30'
-  },
-  {
-    id: 'WW-20260508-1930',
-    customerName: 'Ben Lowry',
-    orderTime: '10:30',
-    items: 8,
-    total: '$92.40',
-    status: 'pending',
-    dueTime: '16:30'
-  },
-  {
-    id: 'WW-20260508-2000',
-    customerName: 'Nadia Khan',
-    orderTime: '10:45',
-    items: 12,
-    total: '$156.90',
-    status: 'pending',
-    dueTime: '17:00'
   },
   {
     id: 'WW-20260508-2015',

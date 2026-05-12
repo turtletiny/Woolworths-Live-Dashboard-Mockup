@@ -37,26 +37,6 @@ export const mockQueueData: QueueItem[] = [
     assignedTo: 'Sarah M.'
   },
   {
-    priorityScore: 92,
-    orderId: 'WW-20260508-1851',
-    orderName: 'James Jones',
-    timeDue: '11:30 AM',
-    items: 18,
-    picked: 2,
-    status: 'Pre-picking (Storage OK)',
-    assignedTo: 'James K.'
-  },
-  {
-    priorityScore: 82,
-    orderId: 'WW-20260508-1862',
-    orderName: 'Michael Patel',
-    timeDue: '12:00 PM',
-    items: 15,
-    picked: 4,
-    status: 'Pre-picking (Storage OK)',
-    assignedTo: 'Michael R.'
-  },
-  {
     priorityScore: 78,
     orderId: 'WW-20260508-1868',
     orderName: 'Lisa Brown',
@@ -75,26 +55,6 @@ export const mockQueueData: QueueItem[] = [
     picked: 6,
     status: 'Staging Frozen',
     assignedTo: 'David H.'
-  },
-  {
-    priorityScore: 20,
-    orderId: 'WW-20260508-1930',
-    orderName: 'Ben Lowry',
-    timeDue: '04:30 PM',
-    items: 8,
-    picked: 0,
-    status: 'Scheduled',
-    assignedTo: '-'
-  },
-  {
-    priorityScore: 12,
-    orderId: 'WW-20260508-2000',
-    orderName: 'Nadia Khan',
-    timeDue: '05:00 PM',
-    items: 12,
-    picked: 0,
-    status: 'Scheduled',
-    assignedTo: '-'
   },
   {
     priorityScore: 5,
