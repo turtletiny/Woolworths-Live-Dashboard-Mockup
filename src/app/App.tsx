@@ -26,20 +26,19 @@ export default function App() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
                 <MetricCard
                   title="Currently Picking"
-                  value="35"
+                  value="5"
                   subtitle="orders in progress"
                   icon={ShoppingCart}
                 />
                 <MetricCard
-                  title="Dispatching Next Hour"
-                  value="18"
-                  subtitle="ready for dispatch"
+                  title="Due Next Hour"
+                  value="3"
                   icon={Truck}
                 />
                 <MetricCard
                   title="Backend Storage"
                   value="72%"
-                  subtitle="capacity utilization"
+                  subtitle="capacity utilisation"
                   icon={Database}
                   variant="battery"
                   progressValue={72}
