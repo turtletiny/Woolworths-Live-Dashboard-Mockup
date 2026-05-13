@@ -150,7 +150,6 @@ export function PriorityPickingQueue() {
     <div className="bg-white rounded-lg border border-border shadow-sm">
       <div className="px-6 py-4 border-b border-border">
         <h3 className="font-semibold text-foreground">Priority Picking Queue</h3>
-        <p className="text-sm text-muted-foreground mt-1">Dynamic DSS sorting by multiple factors</p>
       </div>
       <div className="overflow-x-auto">
         <table className="w-full">

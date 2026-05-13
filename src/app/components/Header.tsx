@@ -35,9 +35,9 @@ export function Header() {
     <header className="bg-white border-b border-border px-8 py-4">
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-2xl font-semibold text-foreground">Live Dashboard</h1>
+          <h1 className="text-2xl font-semibold text-foreground">Live Dashboard • 11:24 AM</h1>
           <p className="text-sm text-muted-foreground mt-1">
-            Friday, May 8, 2026 • 11:24 AM
+            Friday, May 8, 2026
           </p>
         </div>
 
